@@ -27,15 +27,21 @@ Main variables:
 - service_length (seconds)
 - meets_standard (boolean)
 
-The dataset used in this repository is a cleaned version of the original Kaggle dataset,
-and the preprocessing steps are described in the paper.
+The repository contains two datasets:
 
+- `simulated_call_centre.csv` : the original raw dataset obtained from Kaggle.
+- `data/data-pemodelan.xlsx` : a cleaned and preprocessed version of the dataset,
+  which is used for all computations and analysis in this study.
+
+Only the cleaned dataset (`data-pemodelan.xlsx`) is used in the code to compute
+arrival rates, service rates, and all queueing performance metrics.
+The preprocessing steps are described in the paper.
 
 ## Reproducibility
 
 To reproduce the main results:
 
-1. Place the cleaned dataset in the `data/` folder.
+1. Place the cleaned dataset in the `data/data-pemodelan.xlsx` file.
 2. Run the provided Jupyter/Colab notebook (`antrian_model.ipynb`) in the `src/` folder.
 3. The script computes:
    - Arrival rate (λ)
